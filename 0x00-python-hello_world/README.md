@@ -87,3 +87,7 @@ Complete this [source code](https://github.com/alx-tools/0x00.py/blob/master/8-c
 * Creating a new variable is not allowed.
 * Using of string literals (values)
 
+#### 9. Easter Egg
+Write A Python script that prints "The Zen of Python",, by TimPeters, followed by a new line.
+* The script should be maximum 98 characters long.
+
