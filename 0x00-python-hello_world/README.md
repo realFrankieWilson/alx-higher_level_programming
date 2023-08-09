@@ -39,7 +39,7 @@ Namespace are one honking great idea -- let's do more of those!
 * The use of print function is allowed.
 
 #### 3. Print integer
-This challenge is about completing a [source code] (https://github.com/alx-tools/0x00.py/blob/master/3-print_number.py), in order to print integer stored in the variable number, followed by Battery Street, followed by a new line.
+This challenge is about completing a [source code](https://github.com/alx-tools/0x00.py/blob/master/3-print_number.py), in order to print integer stored in the variable number, followed by Battery Street, followed by a new line.
 
 * The expected output of the code:
 	* The number, followed by Batterey street,
