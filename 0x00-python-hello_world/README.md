@@ -80,3 +80,10 @@ Complete this [source code](https://github.com/alx-tools/0x00.py/blob/master/7-e
 * *word_last_2* should contain the last 2 letters of the variable *word*
 * *middle_word* should contain the value of the variable *word* without the first and last letters
 
+#### 8. Create a new sentence
+Complete this [source code](https://github.com/alx-tools/0x00.py/blob/master/8-concat_edges.py) to print object-oriented programming with Python. Followed by a new line.
+* Loops or conditional statements are not allowed.
+* The program should be exactly 5 lines long.
+* Creating a new variable is not allowed.
+* Using of string literals (values)
+
