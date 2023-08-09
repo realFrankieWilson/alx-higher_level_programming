@@ -91,3 +91,18 @@ Complete this [source code](https://github.com/alx-tools/0x00.py/blob/master/8-c
 Write A Python script that prints "The Zen of Python",, by TimPeters, followed by a new line.
 * The script should be maximum 98 characters long.
 
+#### 10. Linked list cycle
+**Technical interview preparation:**
+Write A function in C that checks if a singly linked list has a cycle in it.
+	* Return 0 if there is no cycle, 1 if there is a cycle.
+	* functions allowed: write, printf, putchar, puts, malloc, free.
+
+
+#### 11. Hello, write
+Write a Python script that prints exactly *and that piece of art is useful - Dora Korpar, 2015-10-19*, following a new line
+	* Use the *write* function from the *sys* module
+	* *print* function is not allowed
+	* The script should be printed to stderr
+	* The script should exit with the status code *1*
+
+
