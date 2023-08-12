@@ -130,3 +130,18 @@ Write a function that prints the last digit of a number.
 	* importing any module is not allowed.
 
 
+#### 10. a + b
+Write a function that adds two integers and returns the result.
+
+	* Prototype: *def add(a, b):*
+	* Return: the value of *a + b*
+	* importing any module is not allowed.
+
+
+#### 11. a ^ b
+Write a function that computes a to the power of b and return the value.
+
+	* Prototype: *def pow(a, b):*
+	* Returns the value of *a ^ b*
+	* importing any module is not allowed.
+
