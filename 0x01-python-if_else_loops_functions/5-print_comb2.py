@@ -4,7 +4,7 @@ for i in range(10):
     for a in range(10):
         if a <= 9:
             if i == 9 and a == 9:
-                print(f'{i}{a}', end="\n")
+                print('{}{}'.format(i, a), end="\n")
             else:
-                print(f'{i}{a}', end=", ")
+                print('{}{}'.format(i, a), end=", ")
         continue
