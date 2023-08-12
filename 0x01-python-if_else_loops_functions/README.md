@@ -1,17 +1,17 @@
 ## 0x01. Python -if/else, loops, functions
 #### Resources:
 **Read or watch:**
-	* [More control Flow Tools](https://intranet.alxswe.com/rltoken/jpjs5EnZTpBLLEremJYjPQ) \
+	* [More control Flow Tools](https://intranet.alxswe.com/rltoken/jpjs5EnZTpBLLEremJYjPQ)
 
-	* [IdentationError](https://intranet.alxswe.com/rltoken/F9n2AE-fpEPzt2PfBMGYAQ) \
+	* [IdentationError](https://intranet.alxswe.com/rltoken/F9n2AE-fpEPzt2PfBMGYAQ)
 
-	* [How To Use String Formatters in Python3](https://intranet.alxswe.com/rltoken/ZdtRIAkFu8dMBT99DcFBNg) \
+	* [How To Use String Formatters in Python3](https://intranet.alxswe.com/rltoken/ZdtRIAkFu8dMBT99DcFBNg)
 
-	* [Learn to Program](https://intranet.alxswe.com/rltoken/ElQgZYNHrLI7kV_ysEB1hQ) \
+	* [Learn to Program](https://intranet.alxswe.com/rltoken/ElQgZYNHrLI7kV_ysEB1hQ)
 
-	* [Learn to Program 2: Looping](https://intranet.alxswe.com/rltoken/ElQgZYNHrLI7kV_ysEB1hQ) \
+	* [Learn to Program 2: Looping](https://intranet.alxswe.com/rltoken/ElQgZYNHrLI7kV_ysEB1hQ)
 
-	* [Pycodestyle-Style Guide for Python Code](https://intranet.alxswe.com/rltoken/TuTTnEg_Rwn8U1g3PEsZmA) \
+	* [Pycodestyle-Style Guide for Python Code](https://intranet.alxswe.com/rltoken/TuTTnEg_Rwn8U1g3PEsZmA)
 
 
 #### *TASKS:*
@@ -23,7 +23,8 @@
 * [The souce code](https://intranet.alxswe.com/rltoken/e4tR3cjFHqhelf4y485-zQ)
 * The variable *number* will store a different value every time the program is run
 
-* The expected output:
+The expected output:
+
 	* The number, follwed by 
 	* if the number is greater than 0: *is positive*
 	* if the number is 0 *is zero*
@@ -74,6 +75,7 @@ Write a program that prints all numbers from 0 to 98 in decimal and hexadecimal.
 
 #### 5. 00...99
 Write a program that prints numbers from 0 to 99.
+
 	* Numbers must be separated by *,*, followed by a space
 	* Numbers should be printed in asccending order, with two digits.
 	* The last number should be followed by a new line.
@@ -83,4 +85,37 @@ Write a program that prints numbers from 0 to 99.
 	* Module importation is not allowed.
 
 
-####
+#### 6. Inventing is a combination of brains and materials. The more brains you use, the less material you need.
+Write a program that prints all possible different combinations of two digits.
+
+	* Numbers must be separated by *,* followed by a space
+	* The two digits must be different
+	* *01* and *10* are considered the same combination of the two digits *0* and *1*
+	* Print only the smallest combination of two digits
+	* Numbers should be printed in ascending order, with two digits
+	* The last number should be followed by a new line
+	* No more than 3 function are allowed
+	* No more than 2 loops are allowed
+	* Storing numbers in variable is not allowed
+	* No importation of module is allowed9
+
+
+#### 7. islower
+Write a function that checks for lowercase character.
+
+	* Prototype: *def islower(c):*
+	* Returns *True* if *c* is lowercase
+	* Returns *False* if otherwise
+	* Importation of any module is not allowed
+	* Using *str.upper()* and *str.isupper()* is not allowed
+
+
+#### 8. To uppercase
+Write a function that prints a string in uppercase followed by a new line.
+
+	* Prototype: *def uppercase(str):*
+	* Only use one loop
+	* Returns *False* if otherwise
+	* Importation of any module is not allowed
+	* Using *str.upper()* and *str.isupper()* is not allowed
+	* Only 2 print functions is allowed with the string format.
