@@ -1,12 +1,17 @@
 ## 0x01. Python -if/else, loops, functions
 #### Resources:
 **Read or watch:**
-	* [More control Flow Tools](https://intranet.alxswe.com/rltoken/jpjs5EnZTpBLLEremJYjPQ)
-	* [IdentationError](https://intranet.alxswe.com/rltoken/F9n2AE-fpEPzt2PfBMGYAQ)
-	* [How To Use String Formatters in Python3](https://intranet.alxswe.com/rltoken/ZdtRIAkFu8dMBT99DcFBNg)
-	* [Learn to Program](https://intranet.alxswe.com/rltoken/ElQgZYNHrLI7kV_ysEB1hQ)
-	* [Learn to Program 2: Looping](https://intranet.alxswe.com/rltoken/ElQgZYNHrLI7kV_ysEB1hQ)
-	* [Pycodestyle-Style Guide for Python Code](https://intranet.alxswe.com/rltoken/TuTTnEg_Rwn8U1g3PEsZmA)
+	* [More control Flow Tools](https://intranet.alxswe.com/rltoken/jpjs5EnZTpBLLEremJYjPQ) \
+
+	* [IdentationError](https://intranet.alxswe.com/rltoken/F9n2AE-fpEPzt2PfBMGYAQ) \
+
+	* [How To Use String Formatters in Python3](https://intranet.alxswe.com/rltoken/ZdtRIAkFu8dMBT99DcFBNg) \
+
+	* [Learn to Program](https://intranet.alxswe.com/rltoken/ElQgZYNHrLI7kV_ysEB1hQ) \
+
+	* [Learn to Program 2: Looping](https://intranet.alxswe.com/rltoken/ElQgZYNHrLI7kV_ysEB1hQ) \
+
+	* [Pycodestyle-Style Guide for Python Code](https://intranet.alxswe.com/rltoken/TuTTnEg_Rwn8U1g3PEsZmA) \
 
 
 #### *TASKS:*
@@ -17,6 +22,7 @@
 	 is positive or negative
 * [The souce code](https://intranet.alxswe.com/rltoken/e4tR3cjFHqhelf4y485-zQ)
 * The variable *number* will store a different value every time the program is run
+
 * The expected output:
 	* The number, follwed by 
 	* if the number is greater than 0: *is positive*
@@ -24,3 +30,57 @@
 	* if the number is less thatn 0: *is negative*
 	* followed by a new line.
 
+
+#### 1. The last digit
+This program will assign a random signed number to the variable *number* each time it is executed. Complete the source code in order to print the last digit of the number stored in the variable *number*
+	* sourc code [here](https://intranet.alxswe.com/rltoken/Vku0ZPFeDPuXUKD8nZ4mOQ).
+
+	* The output of this program should be:
+	* The number, followed by 
+	* The string *is*, followed by the last digit of *number*, followed by 
+	*	if the last digit is greater than 5: the string *and is greater than 5*
+	*	if the last digit is 0: the string *and is 0*
+	*	if the last digit is less than 6 and not 0: the string *and is less than 6 and not 0*
+	* followed by a new line.
+
+
+#### 2. I sometimes suffer from insomnia. And when i can't fall asleep, I play what i call the alphabet game.
+Wriet a program that prints the ASCII alphabet, in lowercase, not followed by a new line.
+
+	* The use of print function can only be used with string format.
+	* Only one loop is allowed in this code
+	* Storing characters in a variable is not allowed.
+	* Importation of any module is not allowed.
+
+
+#### 3. When I was having that alphabet soup, I never thought that it would pay off.
+Write a program that prints the ASCII alphabet in lowercase, not followed by a new line.
+
+	* Print all the letters except q and e
+	* only one print function with a string format is allowed
+	* Only one loop is allowed
+	* Using of variables is not allowed.
+	* No importation of any module.
+
+
+#### 4. Hexadecimal printing
+Write a program that prints all numbers from 0 to 98 in decimal and hexadecimal.
+
+	* print function is allowed only once with string format.
+	* only one loop is allowed.
+	* storing numbers in variable is not allowed
+	* importation of module is not allowed.
+
+
+#### 5. 00...99
+Write a program that prints numbers from 0 to 99.
+	* Numbers must be separated by *,*, followed by a space
+	* Numbers should be printed in asccending order, with two digits.
+	* The last number should be followed by a new line.
+	* No more than 2 print function with string format
+	* Only one loop is allowed.
+	* variable usage to store numbers is not allowed.
+	* Module importation is not allowed.
+
+
+####
