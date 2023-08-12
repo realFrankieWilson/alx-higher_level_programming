@@ -1,10 +1,8 @@
 #!/usr/bin/python3
-# A program that prints numbers from 0 to 99.
-for i in range(10):
-    for a in range(10):
-        if a <= 9:
-            if i == 9 and a == 9:
-                print('{}{}'.format(i, a), end="\n")
-            else:
-                print('{}{}'.format(i, a), end=", ")
-        continue
+# A program that prints numbers from 0 to 99
+tm = 0
+for i in range(100):
+    if i == 99:
+        print('{}'.format(i), end='\n')
+    else:
+        print('{:02d}'.format(i), end=', ')
