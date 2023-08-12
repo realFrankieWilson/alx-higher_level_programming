@@ -119,3 +119,14 @@ Write a function that prints a string in uppercase followed by a new line.
 	* Importation of any module is not allowed
 	* Using *str.upper()* and *str.isupper()* is not allowed
 	* Only 2 print functions is allowed with the string format.
+
+
+#### 9. There are only 3 colors, 10 digits, and 7 notes; it's what we do with them that's important.
+
+Write a function that prints the last digit of a number.
+
+	* Prototype: *def print_last_digit(number):*
+	* Returns The value of the last digit
+	* importing any module is not allowed.
+
+
