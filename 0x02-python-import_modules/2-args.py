@@ -5,10 +5,9 @@ if __name__ == "__main__":
 a = 0
 agv_len = len(sys.argv) - 1
 if agv_len == 1:
-    print('{} argument:'.format(agv_len))
-    print('{}: {}'.format(agv_len, sys.argv[1]))
+    print('1 argument:')
 elif agv_len == 0:
-    print('{} arguments.'.format(agv_len))
+    print('0 arguments.')
 else:
     print('{} arguments:'.format(agv_len))
     while a < agv_len:
