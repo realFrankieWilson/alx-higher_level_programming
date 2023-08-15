@@ -32,3 +32,23 @@ Write a program that imports function from the file *calculator_1.py*, does some
 
 #### 2. How to make a script dynamic!
 Write a program that prints the number of and list of its arguments
+
+
+#### 3. Write a program that prints the result of the addition of all arguments.
+
+
+#### 4. Who are you?
+
+Write a program that prints all the names defined by the compiled module [hidden_4.py](https://github.com/alx-tools/0x02.py/raw/master/hidden_4.pyc)
+
+
+#### 5. Everythin can be imported
+
+Write a program that imports the variable *a* from the file *variable_load_5.py* and prints it's value.
+
+
+#### 6. Build my ownn calculator!
+Write a program that imports all functions from the file *calculator_1.py* and handles basic operations.
+	* Usage: *./100-my_calculator.py a operator b*
+
+
