@@ -4,10 +4,9 @@ if __name__ == "__main__":
     ''' imports hidden files'''
     import hidden_4
 
-    file_1 = dir(hidden_4)
-
-    for file_2 in file_1:
-        if file_2 == '_':
+    cont = dir(hidden_4)
+    for cont2 in cont:
+        if cont2[:2] == '__':
             pass
         else:
-            print(file_2)
+            print(cont2)

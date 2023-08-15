@@ -11,5 +11,5 @@ else:
     print('{} arguments:'.format(agv_len))
     a = 0
     while a < agv_len:
-        print('{}: {}'.format(a + 1, sys.argv[a + 1]))
+        print('{:d}: {:s}'.format(a + 1, sys.argv[a + 1]))
         a += 1
