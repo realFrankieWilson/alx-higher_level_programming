@@ -9,3 +9,6 @@ The first projects are more "C-oriented" = no tricks, no funcky syntax - simple!
 
 #### [0x02. Python - import & modules](https://intranet.alxswe.com/projects/239)
 
+#### [0x03. Python - Data Structures: Lists, Tuples](https://intranet.alxswe.com/projects/241)
+
+
