@@ -11,4 +11,6 @@ The first projects are more "C-oriented" = no tricks, no funcky syntax - simple!
 
 #### [0x03. Python - Data Structures: Lists, Tuples](https://intranet.alxswe.com/projects/241)
 
+#### [0x04. Python - More Data Structures: Set, Dictionary](https://intranet.alxswe.com/projects/243#quiz-completed)
+
 
