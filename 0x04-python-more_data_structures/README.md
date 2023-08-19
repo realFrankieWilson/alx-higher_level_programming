@@ -15,7 +15,14 @@
 
 #### *Tasks:*
 
+#### 0. Squared simple
+
 *.* Write a function that computes the square value of all integers of a matrix.
 	* prototype: *def square_matrix_simple(matrix=[]):*
+
+#### 1. Search and replace
+
+*.* Write a function that replaces all occurrence of an element by another in a new list.
+	* prototype: *def search_replace(my_list, serach, replace):*
 
 
