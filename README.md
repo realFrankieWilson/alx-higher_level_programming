@@ -13,4 +13,5 @@ The first projects are more "C-oriented" = no tricks, no funcky syntax - simple!
 
 #### [0x04. Python - More Data Structures: Set, Dictionary](https://intranet.alxswe.com/projects/243#quiz-completed)
 
+#### [0x05. Pythone - Exception](https://intranet.alxswe.com/projects/245)
 
