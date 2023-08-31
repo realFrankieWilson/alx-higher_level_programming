@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+# 1-square.py By Franke Williams Ugwu
+
+
 class Square:
     """
     class with private atributte
