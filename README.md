@@ -15,5 +15,7 @@ The first projects are more "C-oriented" = no tricks, no funcky syntax - simple!
 
 #### [0x05. Pythone - Exception](https://intranet.alxswe.com/projects/245)
 
-#### [0x06-python-classes](https://intranet.alxswe.com/projects/247)
+#### [0x06. Python - classes](https://intranet.alxswe.com/projects/247)
+
+#### [0x09. Python - Everything is object](https://intranet.alxswe.com/projects/252)
 
