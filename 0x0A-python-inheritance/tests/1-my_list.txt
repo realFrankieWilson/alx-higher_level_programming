@@ -1,86 +1,119 @@
-''1-my_list'' module
+Test for 1-my_list.py
 =====================
 
-usage:
-----------------------
-module imports:
-''1-my_list'' from the ''1-main'' module:
-	>>> MyList = __import__('1-my_list').MyList
+Import Module
+>>> MyList = __import__('1-my_list').MyList
+>>>
+____________________________________________
 
 
-Correct way of using it:
+========================================================
+= The Correct usage, undefined usage, and Errors are   =
+= organised by index numbers, for clarity.             =
+========================================================
 
-	>>> my_list = MyList()
 
-	>>>	my_list.append(1)
-	>>> my_list.append(4)
-    >>> my_list.append(2)
-    >>> my_list.append(3)
-    >>> my_list.append(5)
-    >>> print(my_list)
-    [1, 4, 2, 3, 5]
+USAGE[0] : Normal usage
+______________________
+>>> my_list = MyList()
+>>> my_list.append(1)
+>>> my_list.append(4)
+>>> my_list.append(2)
+>>> my_list.append(3)
+>>> my_list.append(5)
+>>> print(my_list)
+[1, 4, 2, 3, 5]
+>>> my_list.print_sorted()
+[1, 2, 3, 4, 5]
+>>> print(my_list)
+[1, 4, 2, 3, 5]
 
-    >>> my_list.print_sorted()
-    [1, 2, 3, 4, 5]
 
-If list were sorted previoulsly:
-	>>> my_list_so = MyList()
+USAGE[1] : Undefined Objects:
+_____________________________
+Note: The error comes up if you try to incorrectly import the module
 
-	>>> my_list_so.append(4)
-    >>> my_list_so.append(5)
-    >>> my_list_so.append(6)
-    >>> print(my_list_so)
-    [4, 5, 6]
+>>> MyList = __import__('1-my_list').MyList
+>>> my_list2.print_sorted()
+Traceback (most recent call last):
+NameError: name 'my_list2' is not defined
 
-    >>> my_list_so.print_sorted()
-    [4, 5, 6]
 
-If a negative element present:
-	>>> my_list_n = MyList()
 
-	>>> my_list_n.append(-4)
-    >>> my_list_n.append(-3)
-    >>> my_list_n.append(-6)
-    >>> print(my_list_n)
-    [-4, -3, -6]
+USAGE[2] : Passing a list as an argument
+________________________________________
+>>> lst = [3, 2, 8]
+>>> my_list = MyList(lst)
+>>> my_list.print_sorted()
+[2, 3, 8]
+>>> 
 
-    >>> my_list_n.print_sorted()
-    [-6, -4, -3]
 
-If a list has a string element
-	>>> My_list_s = MyList()
 
-	>>> my_list_s.append('Better')
-    >>> my_list_s.append('Off')
-    >>> my_list_s.append('Alone')
-    >>> print(my_list_s)
-    ['Better', 'Off', 'Alone']
+USAGE[3] : Passing an Empty list
+_________________________________
+>>> my_list = MyList([])
+>>> my_list
+[]
+>>> 
 
-    >>> my_list_s.print_sorted()
-    ['Alone', 'Better', 'Off']
 
-An Empty list:
-	>>> my_list_e = MYList()
 
-  	>>> my_list_e = MyList()
-    >>> print(my_list_e)
-    []
+USAGE[4] : Passing a String
+___________________________
+>>> lst = [3, 5, 'hello']
+>>> my_list=MyList(lst)
+>>> my_list.sort()
+Traceback (most recent call last):
+TypeError: '<' not supported between instances of 'str' and 'int'
+>>> 
 
-If areguments were passed by list
-	>>> my_list_a = MyList([4, 3, 6])
 
-	>>> print(my_list_a)
-	[3, 4, 6]
 
-If two list argument are passed:
-	>>> my_list_x = MyList([4, 3, 6], [])
+USAGE[5] : Passing a unique Number
+__________________________________
+>>> my_list = MyList()
+>>> my_list.append(1)
+>>> my_list.print_sorted()
+[1]
+>>> print(my_list)
+[1]
+>>> 
 
-	>>> my_list_x = MyList([4, 2, 6], [5, 6, 7])
-	Traceback (most recent call last):
-	TypeError: list expected at most 1 argument, got 2
 
-Argument with different elements:
-	>>> my_list_k = MyList([4, 'hello', 8])
-	>>> my_list_k.print_sorted()
-	Traceback (most recent call last):
-	TypeError: '<' not supported between instances of 'str' and 'int'
+
+USAGE[6] : Passing same Number
+______________________________
+>>> my_list = MyList()
+>>> my_list.append(8)
+>>> my_list.append(8)
+>>> my_list.append(8)
+>>> my_list
+[8, 8, 8]
+>>> 
+
+
+
+
+USAGE[7] : Passing Negative numbers
+___________________________________
+>>> my_list = MyList()
+>>> for i in range(-10, 2):
+...     my_list.append(i)
+... 
+>>> my_list.print_sorted()
+[-10, -9, -8, -7, -6, -5, -4, -3, -2, -1, 0, 1]
+>>> 
+
+
+
+
+USAGE[8] : Passing a Base object
+________________________________
+>>> my_list = [2, 8, 3]
+>>> my_list.print_sorted()
+Traceback (most recent call last):
+AttributeError: 'list' object has no attribute 'print_sorted'
+>>> 
+
+
