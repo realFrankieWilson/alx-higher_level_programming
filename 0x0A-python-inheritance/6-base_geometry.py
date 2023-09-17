@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 # 6-base_geometry.py
-""" BaseGeometry (based on 5-base_geometry.py) """
+""" A class that return an exception """
 
 
 class BaseGeometry:
     """ method to raise an exception """
     def area(self):
-        return Exception("area() is not implemented")
+        raise Exception("area() is not implemented")
