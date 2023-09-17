@@ -1,0 +1,86 @@
+''1-my_list'' module
+=====================
+
+usage:
+----------------------
+module imports:
+''1-my_list'' from the ''1-main'' module:
+	>>> MyList = __import__('1-my_list').MyList
+
+
+Correct way of using it:
+
+	>>> my_list = MyList()
+
+	>>>	my_list.append(1)
+	>>> my_list.append(4)
+    >>> my_list.append(2)
+    >>> my_list.append(3)
+    >>> my_list.append(5)
+    >>> print(my_list)
+    [1, 4, 2, 3, 5]
+
+    >>> my_list.print_sorted()
+    [1, 2, 3, 4, 5]
+
+If list were sorted previoulsly:
+	>>> my_list_so = MyList()
+
+	>>> my_list_so.append(4)
+    >>> my_list_so.append(5)
+    >>> my_list_so.append(6)
+    >>> print(my_list_so)
+    [4, 5, 6]
+
+    >>> my_list_so.print_sorted()
+    [4, 5, 6]
+
+If a negative element present:
+	>>> my_list_n = MyList()
+
+	>>> my_list_n.append(-4)
+    >>> my_list_n.append(-3)
+    >>> my_list_n.append(-6)
+    >>> print(my_list_n)
+    [-4, -3, -6]
+
+    >>> my_list_n.print_sorted()
+    [-6, -4, -3]
+
+If a list has a string element
+	>>> My_list_s = MyList()
+
+	>>> my_list_s.append('Better')
+    >>> my_list_s.append('Off')
+    >>> my_list_s.append('Alone')
+    >>> print(my_list_s)
+    ['Better', 'Off', 'Alone']
+
+    >>> my_list_s.print_sorted()
+    ['Alone', 'Better', 'Off']
+
+An Empty list:
+	>>> my_list_e = MYList()
+
+  	>>> my_list_e = MyList()
+    >>> print(my_list_e)
+    []
+
+If areguments were passed by list
+	>>> my_list_a = MyList([4, 3, 6])
+
+	>>> print(my_list_a)
+	[3, 4, 6]
+
+If two list argument are passed:
+	>>> my_list_x = MyList([4, 3, 6], [])
+
+	>>> my_list_x = MyList([4, 2, 6], [5, 6, 7])
+	Traceback (most recent call last):
+	TypeError: list expected at most 1 argument, got 2
+
+Argument with different elements:
+	>>> my_list_k = MyList([4, 'hello', 8])
+	>>> my_list_k.print_sorted()
+	Traceback (most recent call last):
+	TypeError: '<' not supported between instances of 'str' and 'int'
