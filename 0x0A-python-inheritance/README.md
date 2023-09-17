@@ -31,4 +31,7 @@
 		You are not allowed to import any module
 
 ##### 2. Exact same object
-
+	Write a function that returns "True" if the object is exactly an instance
+	of the specific class: Otherwise False.
+		Prototype: def is_same_class(obj, a_class):
+		You are not allowed to import any module
