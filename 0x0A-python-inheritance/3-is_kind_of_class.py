@@ -7,6 +7,11 @@ is an instance that returns it
 
 
 def is_kind_of_class(obj, a_class):
-    if isinstance(obj, a_class):
-        return True
-    return False
+    """ Args:
+        obj: The object to be compared with
+        a_class: The class to compare with the object
+    Returns:
+        True-> if the object is an int or inherieted from the specified class
+        Otherwise False is returned
+    """
+    return (isinstance(obj, a_class))
