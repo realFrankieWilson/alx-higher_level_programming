@@ -19,3 +19,6 @@ The first projects are more "C-oriented" = no tricks, no funcky syntax - simple!
 
 #### [0x09. Python - Everything is object](https://intranet.alxswe.com/projects/252)
 
+#### [0x0A. Python - Inheritance](https://intranet.alxswe.com/projects/254)
+
+
