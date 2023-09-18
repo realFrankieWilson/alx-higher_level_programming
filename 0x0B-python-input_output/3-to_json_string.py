@@ -5,8 +5,5 @@ import json
 
 
 def to_json_string(my_obj):
-    """
-    Args:
-        my_obj-> The object to be passed
-    """
-    return (json.dumps(my_obj))
+    """ Returns a json file version of an object """
+    return json.dumps(my_obj)
