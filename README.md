@@ -21,4 +21,6 @@ The first projects are more "C-oriented" = no tricks, no funcky syntax - simple!
 
 #### [0x0A. Python - Inheritance](https://intranet.alxswe.com/projects/254)
 
+#### [0x0B. Python - Input/Output](https://intranet.alxswe.com/projects/260)
+
 
