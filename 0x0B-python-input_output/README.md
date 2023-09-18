@@ -43,4 +43,9 @@
 		You are not allowed to import any module
 
 ##### 3. To JSON string
+	Write a function that returns the JSON representation of an object(string):
+		Prototype: def to_json_string(my_obj):
+		You don’t need to manage exceptions if the object can’t be serialized.
+
+##### 4. From JSON string to Object
 
