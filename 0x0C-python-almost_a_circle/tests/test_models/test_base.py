@@ -1,15 +1,16 @@
 #!/usr/bin/python3
-#tests.py
+# tests.py
 
-import unittest # imports the unittest module
+import unittest  # imports the unittest module
+
 
 class TestFunction(unittest.TestCase):
-	"""
-	Tests function for all the programs
-	"""
-	pass
+    """
+    Tests function for all the programs
+    """
+    pass
 
 
 if __name__ == '__main__':
-	""" Test driver """
-	unittest.main()
+    """ Test driver """
+    unittest.main()
