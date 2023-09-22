@@ -42,10 +42,10 @@ class Rectangle(Base):
     def width(self, val):
         """ Sets the value of the width """
         if (type(val) is not int):
-            raise TypeError('Width must be an integer')
+            raise TypeError('width must be an integer')
 
         elif val <= 0:
-            raise ValueError('Width must be > 0')
+            raise ValueError('width must be > 0')
 
         self.___width = val
 
