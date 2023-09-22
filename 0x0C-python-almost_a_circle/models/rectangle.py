@@ -17,6 +17,11 @@ class Rectangle(Base):
         self.y = y
         super().__init__(id)
 
+    def __str__(self):
+        """ The str method for returning str version of the rectanclge att """
+        return f'[Rectangle] ({self.id}) {self.x}/{self.y} - {self.width}/{self.height}'
+
+
     # Lists of functions that get the class properties
     @property
     def width(self):
