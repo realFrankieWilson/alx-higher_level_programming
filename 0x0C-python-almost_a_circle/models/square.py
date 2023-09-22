@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 # square.py
-""" The Class module """
+""" The grand child module of class Base class"""
 
 
 # imports modules
@@ -16,7 +16,6 @@ class Square(Rectangle):
         self.x = x
         self.y = y
         self.id = None
-
         super().__init__(size, size, x, y, id)
 
     def __str__(self):
