@@ -1,9 +1,8 @@
 #!/usr/bin/python3
 # rectangle.py
-""" A rectangle module """
+""" A rectangle module, which inherites from base class"""
 
 
-# imports modules
 from models.base import Base
 
 
