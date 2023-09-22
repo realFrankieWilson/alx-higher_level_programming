@@ -88,11 +88,34 @@ class Rectangle(Base):
 
     def display(self):
         """ prints to stdout instacne character # """
-        for i in range(self.__height):
-            print('#' * self.__width)
+        # if self.__y != 0:
+        #     for row in range(self.__y):
+        #         print('\n', end='')
+        for row2 in range(self.__height):
+            print('{}{}'.format(' '*self.__x, '#'*self.__width))
 
     def __str__(self):
         """ The str method for returning str version of the rectanclge att """
         return (
             f'[Rectangle] ({self.id}) {self.x}/{self.y} - \
 {self.width}/{self.height}')
+
+    def update(self, *args):
+        """ Function that assigns argument to each attributes """
+        if args != 0:
+            a = 0
+            for ind in args:
+                if a == 0:
+                    if ind is None:
+                        self.__init__(self.width, self.height, self.x, self.y)
+                    else:
+                        self.id = ind
+                elif a == 1:
+                    self.width = ind
+                elif a == 2:
+                    self.height = ind
+                elif a == 3:
+                    self.x = ind
+                elif a == 4:
+                    self.y = ind
+                a += 1
