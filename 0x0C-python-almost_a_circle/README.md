@@ -57,3 +57,19 @@
         after, in your class you can 'trust' these attributes.
 
 
+##### 3. Validate attributes
+    Update the class Rectangle by adding validation of all setter methods and
+        instantiation(id excluded):
+        1. If the input is not an integer, raise the TypeError exception with
+            the message: <name of the attribute> must be an integer.
+        2.  If width or height is under or equals 0, raise the ValueError
+             exception with the message: <name of the attribute> must be > 0.
+        3. If x or y under 0, raise the valueError exception with the message:
+             <name of the attribute must be >= 0
+
+
+##### 4. Area first
+    Update the class Rectangle by adding the public method def area(self):
+         that reutrns the area value of the Rectangle instance.
+
+
