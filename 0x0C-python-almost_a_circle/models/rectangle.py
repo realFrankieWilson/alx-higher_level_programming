@@ -3,59 +3,58 @@
 """ A rectangle module """
 
 
-from models.base import Base    # imports the base class module
+# imports modules
+from models.base import Base
 
 
 class Rectangle(Base):
-    """
-    Rectangle is a sub-class that inherits attributes from a Base class.
-    """
+    """ A class of a rectangle """
 
     def __init__(self, width, height, x=0, y=0, id=None):
-        """ Constructor, it initializes object of the methods"""
+        """ A constructor, initializes the class objects """
         self.width = width
         self.height = height
         self.x = x
         self.y = y
         super().__init__(id)
 
-    # Lists of getter and setter functions
+    # Lists of functions that get the class properties
     @property
     def width(self):
-        """ Returns the value from the setter """
-        return self.__width
-
-    @width.setter
-    def width(self, value):
-        """ Set the width variable """
-        self.__width = value
+        """ Returns the value of width """
+        return self.___width
 
     @property
     def height(self):
-        """ Returns the value from the setter """
+        """ Returns the value of height """
         return self.__height
 
-    @height.setter
-    def height(self, value):
-        """ Set the height value """
-        self.__height = value
-
     @property
-    def set_x(self):
-        """ Returns the value from the setter """
+    def x(self):
+        """ Returns the value of x """
         return self.__x
 
-    @set_x.setter
-    def set_x(self, value):
-        """ Set the x varaible """
-        self.__x = value
-
     @property
-    def set_y(self):
-        """ Returns the value of the setter """
+    def y(self):
         return self.__y
 
-    @set_y.setter
-    def set_y(self, value):
-        """ Set the y variable """
-        self.__y = value
+    # Functions/methods for setting the class variables/attributes
+    @width.setter
+    def width(self, val):
+        """ Sets the value of the width """
+        self.___width = val
+
+    @height.setter
+    def height(self, val):
+        """ Sets the value of the height """
+        self.__height = val
+
+    @x.setter
+    def x(self, val):
+        """ Sets the the value of x """
+        self.__x = val
+
+    @y.setter
+    def y(self, val):
+        """ Sets the value of the x variable """
+        self.__y = val
