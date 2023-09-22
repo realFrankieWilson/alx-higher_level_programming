@@ -93,5 +93,6 @@ class Rectangle(Base):
 
     def __str__(self):
         """ The str method for returning str version of the rectanclge att """
-        return '[Rectangle] ({:d}){:d}/{:d} - {:d}/{:d}'.format(
-            self.id, self.x, self.y, self.width, self.height)
+        return (
+            f'[Rectangle] ({self.id}) {self.x}/{self.y} - \
+{self.width}/{self.height}')
