@@ -64,7 +64,7 @@ class Rectangle(Base):
     def x(self, val):
         """ Sets the the value of x """
         if (type(val) is not int):
-            raise TypeError('x must be must be an integer')
+            raise TypeError('x must be an integer')
 
         elif val < 0:
             raise ValueError('x must be >= 0')
