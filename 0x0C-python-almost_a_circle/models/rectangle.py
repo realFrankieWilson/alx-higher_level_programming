@@ -12,13 +12,14 @@ class Rectangle(Base):
     """
 
     def __init__(self, width, height, x=0, y=0, id=None):
-        """ Constructor """
-        self.__width = width
-        self.__height = height
-        self.__x = x
-        self.__y = y
+        """ Constructor, it initializes object of the methods"""
+        self.width = width
+        self.height = height
+        self.x = x
+        self.y = y
         super().__init__(id)
 
+    # Lists of getter and setter functions
     @property
     def width(self):
         """ Returns the value from the setter """
