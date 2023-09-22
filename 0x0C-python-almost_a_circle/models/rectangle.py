@@ -88,9 +88,9 @@ class Rectangle(Base):
 
     def display(self):
         """ prints to stdout instacne character # """
-        # if self.__y != 0:
-        #     for row in range(self.__y):
-        #         print('\n', end='')
+        if self.__y != 0:
+            for row in range(self.__y):
+                print('\n', end='')
         for row2 in range(self.__height):
             print('{}{}'.format(' '*self.__x, '#'*self.__width))
 
