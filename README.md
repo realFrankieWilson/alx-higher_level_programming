@@ -23,4 +23,6 @@ The first projects are more "C-oriented" = no tricks, no funcky syntax - simple!
 
 #### [0x0B. Python - Input/Output](https://intranet.alxswe.com/projects/260)
 
+#### [0x0C. Python - Almost a circle](https://intranet.alxswe.com/projects/331)
+
 
