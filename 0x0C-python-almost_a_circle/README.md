@@ -9,7 +9,6 @@
 *   How to handle named arguments in a function
 
 
-
 #### Tasks:
 
 ##### 0. If it's not tested it doesn't work
@@ -71,5 +70,12 @@
 ##### 4. Area first
     Update the class Rectangle by adding the public method def area(self):
          that reutrns the area value of the Rectangle instance.
+
+
+##### 5. Display #0
+    Update the class Rectangle by adding the public method def display(self):
+        that prints in stdout the Rectangle instance with the character # you
+           you don't need to handle x and y here
+
 
 
