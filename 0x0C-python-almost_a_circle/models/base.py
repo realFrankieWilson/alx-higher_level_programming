@@ -2,6 +2,7 @@
 # base.py
 """ The base class module """
 import json
+import csv
 
 
 class Base:
@@ -74,3 +75,31 @@ class Base:
                 return [cls.create(**ind) for ind in file_list]
         except IOError:
             return []
+    @classmethod
+    def save_to_file_csv(cls, list_objs):
+        """ Method aht serializes list objects and save them to a specified file """
+
+        # A TypeError is Rasied in the following cases:
+        # 1. If all the instances in the tuple (i, cls) of the
+        #       are not the object instances.
+        # 2. If List and list objects are not of type list objects or if
+        #       list is empty.
+        #
+        #   Example: TypeError: List object must be a list of instances.
+
+        file_n = '{}.csv'.format(cls.__name__)
+        with open(file_n, 'w', newline='') as f:
+            if not list_objs:
+                f.write('[]')
+            else:
+
+                if cls.__name__ == 'Rectangle':
+                    fildnames = ['id', 'width', 'height', 'x', 'y']
+                else:
+                    fildnames = ['id', 'size', 'x', 'y']
+
+                write_to = csv.DictWriter(f, fildnames=fildnames)
+                for instance in list_objs:
+                    write_to.writerow(instance.to_dictionary())
+
+
