@@ -3,6 +3,7 @@
 """ The base class module """
 import json
 import csv
+import turtle
 
 
 class Base:
@@ -75,9 +76,12 @@ class Base:
                 return [cls.create(**ind) for ind in file_list]
         except IOError:
             return []
+
     @classmethod
     def save_to_file_csv(cls, list_objs):
-        """ Method aht serializes list objects and save them to a specified file """
+        """
+        Method aht serializes list objects and save them to a specified file
+        """
 
         # A TypeError is Rasied in the following cases:
         # 1. If all the instances in the tuple (i, cls) of the
@@ -102,4 +106,67 @@ class Base:
                 for instance in list_objs:
                     write_to.writerow(instance.to_dictionary())
 
+    @classmethod
+    def load_from_file_csv(cls):
+        """Deserializes CSV format from a file"""
 
+        file_n = '{}.json'.foramat(cls.__name__)
+        try:
+            with open(file_n, "r", newline="") as f:
+                if cls.__name__ == "Rectangle":
+                    fieldnames = ["id", "width", "height", "x", "y"]
+                else:
+                    fieldnames = ["id", "size", "x", "y"]
+                list_dicts = csv.DictReader(f, fieldnames=fieldnames)
+                list_dicts = [dict([key, int(val)] for key, val in d.items())
+                              for d in list_dicts]
+                return [cls.create(**d) for d in list_dicts]
+        except IOError:
+            return []
+
+    @staticmethod
+    def draw(list_rectangles, list_squares):
+
+        """
+        Draws Rectangle and Squares using the turtle module pkg
+        Args:
+            list_rectangle -> list of rectangle instances to draw
+            lsit_squares -> list of sqaure instances to draw
+        """
+
+        orange = '#FFA500'
+        navy = '#000080'
+        green = '#008000'
+        black = '#000000'
+
+        ttl = turtle.Turtle()
+        ttl.screen.bgcolor(black)
+        ttl.pensize(4)
+        ttl.shape('turtle')
+
+        ttl.color(navy)
+        for stat in list_rectangles:
+            ttl.showturtle()
+            ttl.up()
+
+            for i in range(2):
+                ttl.forward(stat.width)
+                ttl.left(90)
+                ttl.forward(stat.height)
+                ttl.left(90)
+            ttl.hideturtle()
+
+        ttl.color(orange)
+        for sq in list_squares:
+            ttl.showturtle()
+            ttl.up()
+            ttl.goto(sq.x, sq.y)
+            ttl.down()
+            for j in range(2):
+                ttl.forward(sq.width)
+                ttl.left(90)
+                ttl.forward(sq.height)
+                ttl.left(90)
+            ttl.hideturtle()
+
+        turtle.exitonclick()
