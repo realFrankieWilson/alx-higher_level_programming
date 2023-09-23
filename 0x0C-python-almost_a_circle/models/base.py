@@ -43,12 +43,38 @@ class Base:
     @staticmethod
     def from_json_string(json_string):
         """ Returns list of json string representations """
+
         json_string_lst = []
 
         if not json_string_lst and not '':
             if type(json_string) is not str:
                 raise TypeError('json_string must be a string')
-
             json_string_lst = json.loads(json_string)
 
         return json_string_lst
+
+    @classmethod
+    def create(cls, **dictionary):
+        """
+        A dictionary class mehtod that returns an object with all attributes
+        already set
+        """
+        if cls.__name__ == 'Rectangle':
+            obj = cls(1, 1)
+
+        if cls.__name__ == 'Square':
+            obj = cls(1)
+
+        obj.update(**dictionary)
+        return obj
+
+    @classmethod
+    def load_from_file(cls):
+        """ Returns a list of instances """
+        file_n = '{}.json'.format(cls.__name__)
+        try:
+            with open(file_n, 'r') as f:
+                file_list = cls.from_json_string(f.read())
+                return [cls.create(**ind) for ind in file_list]
+        except IOError:
+            return []
