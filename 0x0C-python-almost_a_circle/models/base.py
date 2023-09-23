@@ -44,14 +44,10 @@ class Base:
     def from_json_string(json_string):
         """ Returns list of json string representations """
 
-        json_string_lst = []
-
-        if not json_string_lst and not '':
-            if type(json_string) is not str:
-                raise TypeError('json_string must be a string')
-            json_string_lst = json.loads(json_string)
-
-        return json_string_lst
+        if not json_string or len(json_string) == 0:
+            return []
+        else:
+            return json.loads(json_string)
 
     @classmethod
     def create(cls, **dictionary):
