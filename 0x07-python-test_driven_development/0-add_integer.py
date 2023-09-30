@@ -9,7 +9,6 @@ and it only takes in integer or float
 def add_integer(a, b=98):
     """
     Adds a to b, (both integers ) just checking
-    Args:
         a -> is an int;
         b -> is an int;
     """
