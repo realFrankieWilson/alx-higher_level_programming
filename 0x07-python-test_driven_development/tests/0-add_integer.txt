@@ -127,4 +127,41 @@ ____________________
 >>> add_integer(None)
 Traceback (most recent call last):
 TypeError: a must be an integer
+>>>
+
+with One argument.:
+___________________
+>>> add_integer(5)
+103
+>>> 
+
+with both argument as strings:
+_____________________________
+add_integer('hello', 'world')
+Traceback (most recent call last):
+TypeError: a must be an integer
+>>> 
+
+
+infinity as an arguments:
+__________________________
+>>> add_integer(float('inf'))
+Traceback (most recent call last):
+OverflowError: cannot convert float infinity to integer
+>>> 
+
+>>> add_integer(2, float('inf'))
+Traceback (most recent call last):
+OverflowError: cannot convert float infinity to integer
+>>> 
+
+Adding a nan number:
+___________________
+>>> add_integer(float('nan'))
+Traceback (most recent call last):
+ValueError: cannot convert float NaN to integer
+>>> 
+
+Traceback (most recent call last):
+ValueError: cannot convert float NaN to integer
 >>> 
