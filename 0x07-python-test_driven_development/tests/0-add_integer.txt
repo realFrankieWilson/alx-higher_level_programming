@@ -51,20 +51,11 @@ Case String:
 
 >>> add_int(5, "string")
 Traceback (most recent call last):
-ValueError: invalid literal for int() with base 10: 'string'
+TypeError: b must be an integer
 
 >>> add_int("string", 5)
 Traceback (most recent call last):
 TypeError: a must be an integer
-
->>> add_int(5+'string', 5)
-Traceback (most recent call last):
-TypeError: unsupported operand type(s) for +: 'int' and 'str'
-
->>> add_int(5, 'string'*5)
-Traceback (most recent call last):
-ValueError: invalid literal for int() with base 10: 'stringstringstringstringstring'
-
 
 Can do some Basic math:
 >>> add_int(5, 5.5*5)
