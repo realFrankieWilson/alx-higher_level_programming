@@ -7,10 +7,18 @@ and it only takes in integer or float
 
 
 def add_integer(a, b=98):
-    """
-    Adds a to b, (both integers ) just checking
+    """ Return sum of two integers or floats
+
+    Args:
         a -> is an int;
         b -> is an int;
+
+    Returns:
+        sum of a and b
+
+    Raises:
+        TypeError: if the arguments are not int or float
+
     """
 
     if ((not isinstance(a, int) and not isinstance(a, float))):

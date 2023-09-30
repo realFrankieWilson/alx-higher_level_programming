@@ -1,80 +1,130 @@
-Tests for file 0-add.py
-========================
+###################################
+DOCUMENTATION ON THE ADD FUNCTIONS#
+==================================#
 
-
-Usage:
---------------------------
-This document is to help users navigate throught the module.
-import the module before usage: => import ''0-add_integer''
-Usage: => ''0-main.py'':
-
-IMPORTATION:
-___________
->>> add_int = __import__('0-add_integer').add_integer
+What the function does:
+______________________
+The function adds 2 integers
+Returns a Sum of the two integer.
 
 
 
-USAGE PROPER:
-____________
 
-Case int:
-
->>> add_int(6, 2)
-8
-
->>> add_int(-9, 20)
-11
+Importing the module:
+_____________________
+>>> add_integer = __import__('0-add_integer').add_integer
+>>> 
 
 
->>> add_int(-9, -20)
--29
 
 
-Case Float:
->>> add_int(5.5, 2.0)
-7
+USAGE:
+======
 
->>> add_int(5.5, 2)
-7
+Successful Usage
+________________
 
->>> add_int(5.5, -2)
+We can use normal integers:
+---------------------------
+>>> add_integer(2, 1)
 3
+>>> 
 
->>> add_int(-1.5, -2)
+We can use negative integers:
+----------------------------
+>>> add_integer(2, -1)
+1
+>>>
+
+>>> add_integer(-1, 2)
+1
+>>> 
+
+>>> add_integer(-1, -2)
 -3
-
->>> add_int(5, 5.0)
-10
+>>> 
 
 
-Case String:
 
->>> add_int(5, "string")
+We can use float:
+-----------------
+>>> add_integer(1, 1.5)
+2
+>>>
+
+>>> add_integer(1.5, 1)
+2
+>>> 
+
+>>> add_integer(1.5, 1.5)
+2
+>>> 
+
+
+We can use Negative float
+-------------------------
+>>> add_integer(1.5, -1.5)
+0
+
+>>> add_integer(-1.5, 1.5)
+0
+
+>>> add_integer(-1.5, -1.5)
+-2
+>>>
+
+
+We can Perform Some math operations with individual parameters
+--------------------------------------------------------------
+addition:
+_________
+>>> add_integer(-1.5, 5+5)
+9
+>>> 
+
+minus:
+______
+>>> add_integer(-1.5, 5*5)
+24
+>>> 
+
+division:
+_________
+>>> add_integer(5/5, 5)
+6
+>>>
+
+mod:
+___
+>>> add_integer(5%5, 5)
+5
+>>>
+
+multiplications:
+_______________
+>>> add_integer(5*5, 5)
+30
+>>> 
+
+
+These Cases will give errors:
+=============================
+
+With strings:
+____________
+>>> add_integer(5, 'hello')
 Traceback (most recent call last):
 TypeError: b must be an integer
+>>> 
 
->>> add_int("string", 5)
+>>> add_integer('hello', 5)
 Traceback (most recent call last):
 TypeError: a must be an integer
+>>>
 
-Can do some Basic math:
->>> add_int(5, 5.5*5)
-32
-
->>> add_int(5*-2, 5.5)
--5
-
->>> add_int(5-2, 5.5-10)
--1
-
->>> add_int(1+1, 2+2)
-6
-
-add_int(1, 2/2)
-2
-
->>> add_int(1, 2/0)
+With A None argument:
+____________________
+>>> add_integer(None)
 Traceback (most recent call last):
-ZeroDivisionError: division by zero
-
-
+TypeError: a must be an integer
+>>> 
