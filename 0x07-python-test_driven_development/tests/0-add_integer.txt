@@ -1,0 +1,89 @@
+Tests for file 0-add.py
+========================
+
+
+Usage:
+--------------------------
+This document is to help users navigate throught the module.
+import the module before usage: => import ''0-add_integer''
+Usage: => ''0-main.py'':
+
+IMPORTATION:
+___________
+>>> add_int = __import__('0-add_integer').add_integer
+
+
+
+USAGE PROPER:
+____________
+
+Case int:
+
+>>> add_int(6, 2)
+8
+
+>>> add_int(-9, 20)
+11
+
+
+>>> add_int(-9, -20)
+-29
+
+
+Case Float:
+>>> add_int(5.5, 2.0)
+7
+
+>>> add_int(5.5, 2)
+7
+
+>>> add_int(5.5, -2)
+3
+
+>>> add_int(-1.5, -2)
+-3
+
+>>> add_int(5, 5.0)
+10
+
+
+Case String:
+
+>>> add_int(5, "string")
+Traceback (most recent call last):
+ValueError: invalid literal for int() with base 10: 'string'
+
+>>> add_int("string", 5)
+Traceback (most recent call last):
+TypeError: a must be an integer
+
+>>> add_int(5+'string', 5)
+Traceback (most recent call last):
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
+
+>>> add_int(5, 'string'*5)
+Traceback (most recent call last):
+ValueError: invalid literal for int() with base 10: 'stringstringstringstringstring'
+
+
+Can do some Basic math:
+>>> add_int(5, 5.5*5)
+32
+
+>>> add_int(5*-2, 5.5)
+-5
+
+>>> add_int(5-2, 5.5-10)
+-1
+
+>>> add_int(1+1, 2+2)
+6
+
+add_int(1, 2/2)
+2
+
+>>> add_int(1, 2/0)
+Traceback (most recent call last):
+ZeroDivisionError: division by zero
+
+
