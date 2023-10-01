@@ -1,0 +1,92 @@
+DOCUMENTATION OF PRINT NAME MODULE
+==================================
+
+Description:
+************
+
+Module name:
+------------
+3-say_my_name.py
+
+Module Prototype:
+-----------------
+def say_my_name(first_name, last_name="")
+
+Where:
+______
+		First_name->	The frist argument to take in first name of the user.
+						first_name must be a string.
+							Otherwise raises a TypeError message:
+							"first_name must be a stirng"
+		last name ->	The last_name argument is the second name of the user.
+						last_name must be a string.
+							Otherwise raises a TypeError message:
+							"last_name must be a string"
+
+Usage and Program Behaviour:
+****************************
+
+Module importation:
++++++++++++++++++++
+
+Test # 01: The Module must be imported before usage.
+
+				>>> say_my_name = __import__('3-say_my_name').say_my_name
+
+The driver code aka main code:
+------------------------------
+The code can be run both interatively and otherwise
+The below examples / tests are done using the python3
+interative terminal.
+
+Program Behaviour / tests:
+-----------------
+
+SUCCESSFUL CASES
+====================
+case #02: Test with correct parameters:
+.......................................
+		>>> say_my_name("Frankie", "Wilson")
+		My name is Frankie Wilson
+
+
+case #03: Test with the second argument as an empty str:
+.......................................
+		>>> say_my_name("Frankie", "")
+		My name is Frankie 
+
+case #04: Test With first argument as an empty str:
+...............................................................
+		>>> say_my_name("", "Wilson")
+		My name is  Wilson
+
+case #05: Testing both arguments as empty str:
+..................................................
+		>>> say_my_name("", "")
+		My name is  
+
+case #06: Testing with a One string as the argument:
+....................................................
+		>>> say_my_name("Frank")
+		My name is Frank 
+
+case #07: Testing with a single empty string:
+..............................................................
+		>>> say_my_name("")
+		My name is  
+
+case #08: Testing wth no argument specified
+..................................................................
+>>> say_my_name()
+Traceback (most recent call last):
+TypeError: say_my_name() missing 1 required positional argument: 'first_name'
+
+case #09: Testing with a integers:
+...................................................
+		>>> say_my_name(112, "Frank")
+		Traceback (most recent call last):
+		TypeError: first_name must be a string
+
+		>>> say_my_name("Frank", 222)
+		Traceback (most recent call last):
+		TypeError: last_name must be a string
