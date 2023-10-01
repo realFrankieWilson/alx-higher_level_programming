@@ -142,11 +142,46 @@ Traceback (most recent call last):
 TypeError: matrix_divided() missing 2 required positional arguments: 'matrix' and 'div'
 >>> 
 
-CASE H(with matri as a string,)
+Test case #15: A test case with the type of value returned
+
+>>> matrix = [[1, 2, 3], [4, 5, 6]]
+>>> type(matrix_divided(matrix, 3))
+<class 'list'>
 
 
+Test case #11: A test case with a 'None' divider
+
+>>> matrix = [[1, 2, 55.0], [24, 30.5, 8]]
+>>> matrix_divided(matrix, None)
+Traceback (most recent call last):
+TypeError: div must be a number
+
+Test case #10: A test case with a string acting as a row
+
+>>> matrix = [[1, 2, 3], [4, 5, 6], 'Monty Python']
+>>> matrix_divided('matrix', 2)
+Traceback (most recent call last):
+TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+Test case #9: A test case with a matrix of empty lists
+>>> matrix = []
+TypeError: matrix_divided() missing 2 required positional arguments: 'matrix' and 'div'
+>>> type(matrix_divided(matrix, 3))
+<class 'list'>
+>>> 
 
 
+Test case #8: A test case with strings within the rows of the matrix
 
+>>> matrix = [['1', '2', '3'], ['4', '5', '6'], ['7', '8', '9']]
+>>> matrix_divided(matrix, 3)
+Traceback (most recent call last):
+TypeError: matrix must be a matrix (list of lists) of integers/floats
 
+Test case #7: A test case with integers instead of lists in the matrix
+
+>>> matrix = [1, 2, 3, 4, 5, 6]
+>>> matrix_divided(matrix, 3)
+Traceback (most recent call last):
+TypeError: matrix must be a matrix (list of lists) of integers/floats
 
