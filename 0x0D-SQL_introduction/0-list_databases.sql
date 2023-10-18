@@ -1,0 +1,4 @@
+USE mysql;
+
+exit
+
