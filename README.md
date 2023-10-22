@@ -27,6 +27,7 @@ The first projects are more "C-oriented" = no tricks, no funcky syntax - simple!
 
 #### [0x0D. SQL - Introduction](https://intranet.alxswe.com/projects/272)
 
+#### [0x0E. SQL - More queries](https://intranet.alxswe.com/projects/274)
 
 
 
