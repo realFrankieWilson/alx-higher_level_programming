@@ -5,8 +5,8 @@
 const args = process.argv;
 const arg = args.slice(2);
 const toNum = parseInt(arg[0]);
-if (isNaN(toNum)) {
+if (!(toNum)) {
   console.log('Not a number');
 } else {
-  console.log(toNum);
+  console.log(`My number: ${toNum}`);
 }
