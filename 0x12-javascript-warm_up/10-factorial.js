@@ -7,24 +7,9 @@
  */
 
 const args = process.argv.slice(2);
-const arg1 = args[0];
 
-//  Check if first argument is an int or not.
 function factorial (a) {
-  if (isNaN(a)) {
-    console.log(1);
-    return;
-  }
-
-  //  The base condition for the recursion.
-  if (a <= 0) {
-    return;
-  }
-
-  //  Output the value of a, then decrement it by 1.
-  console.log(a);
-  factorial(a - 1);
+  return a === 0 || isNaN(a) ? 1 : a * factorial(a - 1);
 }
 
-//  Function call.
-factorial(arg1);
+console.log(factorial(args));

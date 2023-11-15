@@ -12,6 +12,6 @@ if (!(toNum)) {
   console.log('Missing number of occurrences');
 } else {
   for (;toNum > 0; toNum--) {
-    console.log('C is Fun');
+    console.log('C is fun');
   }
 }
