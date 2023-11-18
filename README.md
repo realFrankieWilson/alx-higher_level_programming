@@ -29,5 +29,7 @@ The first projects are more "C-oriented" = no tricks, no funcky syntax - simple!
 
 #### [0x0E. SQL - More queries](https://intranet.alxswe.com/projects/274)
 
+#### [0x0F. Python - Object-relational mapping](https://intranet.alxswe.com/projects/283)
+
 
 

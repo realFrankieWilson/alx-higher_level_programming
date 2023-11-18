@@ -10,26 +10,19 @@
 const args = process.argv.slice(2);
 const len = args.length;
 
-// Check for No argument passed.
-if (len <= 1) {
+const elem = [];
+
+if (!(args[0])) {
   console.log(0);
 } else {
-  let biggestNum = args[0];
-  let secBig = (args[1]);
-
-  if (secBig > biggestNum) {
-    [biggestNum, secBig] = [secBig, biggestNum];
-  }
-
   for (let i = 2; i < len; i++) {
-    const currentNum = args[i];
-
-    if (currentNum > biggestNum) {
-      secBig = biggestNum;
-      biggestNum = currentNum;
-    } else if (currentNum > secBig && currentNum !== biggestNum) {
-      secBig = currentNum;
-    }
+    elem.push(args[i]);
   }
-  console.log('The second biggest is: ', secBig);
+  elem.sort(function (a, b) {
+    return a - b;
+  });
+  elem.pop();
+  const check = elem.slice(-1);
+  const toNum = parseInt(check);
+  console.log(Number(toNum));
 }
