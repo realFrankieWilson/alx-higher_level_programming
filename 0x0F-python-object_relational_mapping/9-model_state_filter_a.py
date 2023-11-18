@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 '''
-Prints the first State objects from the daabase hbtn_0e_6_usa
+Lists all State object that contain the letter 'a'
+from  the daabase hbtn_0e_6_usa
 '''
 from sqlalchemy import (create_engine)
 from sqlalchemy.orm import sessionmaker
@@ -16,8 +17,6 @@ if __name__ == '__main__':
     Session = sessionmaker()
     Session.configure(bind=engine)
     session = Session()
-    try:
-        states = session.query(State).order_by(State.id).first()
-        print('{}: {}'.format(states.id, states.name))
-    except sqlalchemy.exc.InvalidRequestError:
-        print('Nothing')
+    states = session.query(State).filter(State.name.like('%a%'))
+    for state in states.all():
+        print('{}: {}'.format(state.id, state.name))
