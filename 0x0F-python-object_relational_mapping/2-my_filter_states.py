@@ -1,8 +1,6 @@
 #!/usr/bin/python3
-"""
-Connect DataBase and query
-And list states with capital N
-"""
+"""Connect DataBase Takes an Argument and find a match"""
+
 
 import MySQLdb
 import sys
@@ -16,18 +14,19 @@ def mysqlcon():
             db=sys.argv[3],
             port=3306
             )
+
     cur = conn.cursor()
     cur.execute(
-            "SELECT * FROM states WHERE name LIKE 'N%'"
-            "COLLATE Latin1_General_CS;")
+            "SELECT * FROM states WHERE name LIKE BINARY '{}"
+            "ORDER BY states.id ASC".format(sys.argv[4])
             )
-    states = cur.fetchall()
 
-    for state in states:
+    selected_row = cur.fetchall()
+
+    for state in selected_row:
         print(state)
 
     cur.close()
-    conn.close()
 
 
 if __name__ == '__main__':
