@@ -3,9 +3,6 @@
 // using class notation.
 
 class Rectangle {
-  constructor () {
-
-  }
 }
 
 module.exports = Rectangle;
